@@ -1,0 +1,148 @@
+13685 execve("./fork2", ["./fork2"], 0x7ffff3bb3038 /* 76 vars */) = 0
+13685 arch_prctl(ARCH_SET_FS, 0x7ff9764c64c0) = 0
+13685 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13686
+13685 clone( <unfinished ...>
+13686 clone( <unfinished ...>
+13685 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13687
+13685 clone( <unfinished ...>
+13687 clone( <unfinished ...>
+13686 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13688
+13685 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13689
+13685 clone( <unfinished ...>
+13687 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13690
+13690 clone( <unfinished ...>
+13687 clone( <unfinished ...>
+13688 clone( <unfinished ...>
+13685 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13691
+13686 clone( <unfinished ...>
+13689 clone( <unfinished ...>
+13685 clone( <unfinished ...>
+13688 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13693
+13687 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13692
+13686 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13694
+13688 clone( <unfinished ...>
+13685 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13695
+13687 clone( <unfinished ...>
+13686 clone( <unfinished ...>
+13688 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13697
+13688 clone( <unfinished ...>
+13690 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13696
+13691 clone( <unfinished ...>
+13690 clone( <unfinished ...>
+13687 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13698
+13697 clone( <unfinished ...>
+13690 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13701
+13691 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13703
+13696 clone( <unfinished ...>
+13688 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13700
+13686 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13699
+13686 clone( <unfinished ...>
+13689 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13702
+13685 exit_group(0 <unfinished ...>
+13689 clone( <unfinished ...>
+13685 <... exit_group resumed>)         = ?
+13689 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13706
+13685 +++ exited with 0 +++
+13697 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13705
+13686 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13704
+13691 exit_group(0)                     = ?
+13691 +++ exited with 0 +++
+13696 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13707
+13695 exit_group(0 <unfinished ...>
+13699 clone( <unfinished ...>
+13703 exit_group(0)                     = ?
+13695 <... exit_group resumed>)         = ?
+13697 exit_group(0)                     = ?
+13695 +++ exited with 0 +++
+13703 +++ exited with 0 +++
+13707 exit_group(0 <unfinished ...>
+13705 exit_group(0 <unfinished ...>
+13707 <... exit_group resumed>)         = ?
+13705 <... exit_group resumed>)         = ?
+13697 +++ exited with 0 +++
+13690 exit_group(0 <unfinished ...>
+13705 +++ exited with 0 +++
+13707 +++ exited with 0 +++
+13699 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13708
+13708 exit_group(0)                     = ?
+13690 <... exit_group resumed>)         = ?
+13698 exit_group(0 <unfinished ...>
+13696 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13707, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13698 <... exit_group resumed>)         = ?
+13688 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13697, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13690 +++ exited with 0 +++
+13696 exit_group(0 <unfinished ...>
+13689 exit_group(0 <unfinished ...>
+13688 exit_group(0 <unfinished ...>
+13689 <... exit_group resumed>)         = ?
+13688 <... exit_group resumed>)         = ?
+13698 +++ exited with 0 +++
+13696 <... exit_group resumed>)         = ?
+13687 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13690, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13696 +++ exited with 0 +++
+13708 +++ exited with 0 +++
+13689 +++ exited with 0 +++
+13688 +++ exited with 0 +++
+13699 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13708, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13687 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13698, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13686 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13688, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13687 exit_group(0 <unfinished ...>
+13704 exit_group(0 <unfinished ...>
+13687 <... exit_group resumed>)         = ?
+13704 <... exit_group resumed>)         = ?
+13704 +++ exited with 0 +++
+13687 +++ exited with 0 +++
+13699 exit_group(0)                     = ?
+13686 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13704, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13706 exit_group(0)                     = ?
+13699 +++ exited with 0 +++
+13686 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=13699, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13686 exit_group(0)                     = ?
+13706 +++ exited with 0 +++
+13694 clone( <unfinished ...>
+13686 +++ exited with 0 +++
+13692 clone( <unfinished ...>
+13700 exit_group(0)                     = ?
+13701 exit_group(0)                     = ?
+13700 +++ exited with 0 +++
+13692 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13709
+13701 +++ exited with 0 +++
+13692 exit_group(0 <unfinished ...>
+13709 exit_group(0 <unfinished ...>
+13692 <... exit_group resumed>)         = ?
+13709 <... exit_group resumed>)         = ?
+13702 clone( <unfinished ...>
+13692 +++ exited with 0 +++
+13709 +++ exited with 0 +++
+13702 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13711
+13702 exit_group(0 <unfinished ...>
+13694 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13710
+13710 clone( <unfinished ...>
+13702 <... exit_group resumed>)         = ?
+13694 clone( <unfinished ...>
+13702 +++ exited with 0 +++
+13694 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13712
+13710 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13713
+13694 exit_group(0)                     = ?
+13710 exit_group(0)                     = ?
+13694 +++ exited with 0 +++
+13710 +++ exited with 0 +++
+13712 exit_group(0)                     = ?
+13711 exit_group(0 <unfinished ...>
+13713 exit_group(0 <unfinished ...>
+13711 <... exit_group resumed>)         = ?
+13713 <... exit_group resumed>)         = ?
+13712 +++ exited with 0 +++
+13711 +++ exited with 0 +++
+13713 +++ exited with 0 +++
+13693 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13714
+13693 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13715
+13693 exit_group(0)                     = ?
+13693 +++ exited with 0 +++
+13715 exit_group(0)                     = ?
+13715 +++ exited with 0 +++
+13714 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7ff9764c6790) = 13716
+13714 exit_group(0)                     = ?
+13714 +++ exited with 0 +++
+13716 exit_group(0)                     = ?
+13716 +++ exited with 0 +++

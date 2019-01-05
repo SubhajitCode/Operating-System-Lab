@@ -1,0 +1,494 @@
+10210 10:53:08 execve("./fork2", ["./fork2"], 0x7fffd932da58 /* 76 vars */) = 0
+10210 10:53:08 brk(NULL)                = 0x55f03fb97000
+10210 10:53:08 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+10210 10:53:08 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+10210 10:53:08 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+10210 10:53:08 fstat(3, {st_mode=S_IFREG|0644, st_size=97636, ...}) = 0
+10210 10:53:08 mmap(NULL, 97636, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd7cada0000
+10210 10:53:08 close(3)                 = 0
+10210 10:53:08 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+10210 10:53:08 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+10210 10:53:08 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+10210 10:53:08 fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+10210 10:53:08 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd7cadc7000
+10210 10:53:08 mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd7ca7a0000
+10210 10:53:08 mprotect(0x7fd7ca987000, 2097152, PROT_NONE) = 0
+10210 10:53:08 mmap(0x7fd7cab87000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fd7cab87000
+10210 10:53:08 mmap(0x7fd7cab8d000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd7cab8d000
+10210 10:53:08 close(3)                 = 0
+10210 10:53:08 arch_prctl(ARCH_SET_FS, 0x7fd7cadc84c0) = 0
+10210 10:53:08 mprotect(0x7fd7cab87000, 16384, PROT_READ) = 0
+10210 10:53:08 mprotect(0x55f03dc0a000, 4096, PROT_READ) = 0
+10210 10:53:08 mprotect(0x7fd7cadbf000, 4096, PROT_READ) = 0
+10210 10:53:08 munmap(0x7fd7cada0000, 97636) = 0
+10210 10:53:08 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10211
+10210 10:53:08 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10212
+10210 10:53:08 getpid( <unfinished ...>
+10212 10:53:08 getpid( <unfinished ...>
+10210 10:53:08 <... getpid resumed> )   = 10210
+10210 10:53:08 clone( <unfinished ...>
+10212 10:53:08 <... getpid resumed> )   = 10212
+10212 10:53:08 clone( <unfinished ...>
+10210 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10213
+10210 10:53:08 clone( <unfinished ...>
+10212 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10214
+10213 10:53:08 clone( <unfinished ...>
+10210 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10215
+10215 10:53:08 clone( <unfinished ...>
+10210 10:53:08 clone( <unfinished ...>
+10212 10:53:08 clone( <unfinished ...>
+10215 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10217
+10216 10:53:08 clone( <unfinished ...>
+10210 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10218
+10218 10:53:08 getpid( <unfinished ...>
+10210 10:53:08 getpid( <unfinished ...>
+10218 10:53:08 <... getpid resumed> )   = 10218
+10210 10:53:08 <... getpid resumed> )   = 10210
+10219 10:53:08 clone( <unfinished ...>
+10210 10:53:08 fstat(1,  <unfinished ...>
+10220 10:53:08 getpid( <unfinished ...>
+10210 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10220 10:53:08 <... getpid resumed> )   = 10220
+10218 10:53:08 getppid( <unfinished ...>
+10221 10:53:08 getpid( <unfinished ...>
+10210 10:53:08 brk(NULL <unfinished ...>
+10221 10:53:08 <... getpid resumed> )   = 10221
+10210 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10221 10:53:08 getppid( <unfinished ...>
+10210 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10221 10:53:08 <... getppid resumed> )  = 10219
+10210 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10221 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10210 10:53:08 getppid( <unfinished ...>
+10220 10:53:08 getppid( <unfinished ...>
+10210 10:53:08 <... getppid resumed> )  = 10208
+10220 10:53:08 <... getppid resumed> )  = 10216
+10210 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10220 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10219 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10221
+10218 10:53:08 <... getppid resumed> )  = 10210
+10219 10:53:08 getpid()                 = 10219
+10218 10:53:08 fstat(1,  <unfinished ...>
+10219 10:53:08 getppid( <unfinished ...>
+10218 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10219 10:53:08 <... getppid resumed> )  = 10212
+10216 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10220
+10215 10:53:08 getpid( <unfinished ...>
+10219 10:53:08 fstat(1,  <unfinished ...>
+10215 10:53:08 <... getpid resumed> )   = 10215
+10219 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10218 10:53:08 brk(NULL <unfinished ...>
+10216 10:53:08 getpid( <unfinished ...>
+10218 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10216 10:53:08 <... getpid resumed> )   = 10216
+10218 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10219 10:53:08 brk(NULL <unfinished ...>
+10218 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10219 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10218 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10219 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10216 10:53:08 getppid( <unfinished ...>
+10219 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10216 10:53:08 <... getppid resumed> )  = 10213
+10219 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10216 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10215 10:53:08 getppid( <unfinished ...>
+10214 10:53:08 clone( <unfinished ...>
+10215 10:53:08 <... getppid resumed> )  = 10210
+10213 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10216
+10213 10:53:08 clone( <unfinished ...>
+10215 10:53:08 fstat(1,  <unfinished ...>
+10212 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10219
+10215 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10214 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10222
+10223 10:53:08 getpid( <unfinished ...>
+10213 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10223
+10223 10:53:08 <... getpid resumed> )   = 10223
+10213 10:53:08 getpid( <unfinished ...>
+10223 10:53:08 getppid( <unfinished ...>
+10215 10:53:08 brk(NULL <unfinished ...>
+10223 10:53:08 <... getppid resumed> )  = 10213
+10215 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10223 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10215 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10214 10:53:08 clone( <unfinished ...>
+10215 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10213 10:53:08 <... getpid resumed> )   = 10213
+10215 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10213 10:53:08 getppid()                = 10210
+10214 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10224
+10224 10:53:08 getpid( <unfinished ...>
+10214 10:53:08 getpid( <unfinished ...>
+10224 10:53:08 <... getpid resumed> )   = 10224
+10214 10:53:08 <... getpid resumed> )   = 10214
+10224 10:53:08 getppid( <unfinished ...>
+10214 10:53:08 getppid( <unfinished ...>
+10224 10:53:08 <... getppid resumed> )  = 10214
+10214 10:53:08 <... getppid resumed> )  = 10212
+10224 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10214 10:53:08 fstat(1,  <unfinished ...>
+10213 10:53:08 fstat(1,  <unfinished ...>
+10214 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10213 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10212 10:53:08 clone( <unfinished ...>
+10214 10:53:08 brk(NULL <unfinished ...>
+10213 10:53:08 brk(NULL <unfinished ...>
+10214 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10213 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10214 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10213 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10214 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10213 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10211 10:53:08 clone( <unfinished ...>
+10225 10:53:08 getpid( <unfinished ...>
+10217 10:53:08 getpid()                 = 10217
+10217 10:53:08 getppid( <unfinished ...>
+10213 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10214 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10212 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10225
+10217 10:53:08 <... getppid resumed> )  = 10215
+10217 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10225 10:53:08 <... getpid resumed> )   = 10225
+10222 10:53:08 clone( <unfinished ...>
+10225 10:53:08 getppid( <unfinished ...>
+10212 10:53:08 getpid( <unfinished ...>
+10225 10:53:08 <... getppid resumed> )  = 10212
+10225 10:53:08 fstat(1,  <unfinished ...>
+10211 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10226
+10225 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10211 10:53:08 getpid( <unfinished ...>
+10226 10:53:08 getpid()                 = 10226
+10226 10:53:08 clone( <unfinished ...>
+10225 10:53:08 brk(NULL <unfinished ...>
+10222 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10227
+10225 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10222 10:53:08 getpid( <unfinished ...>
+10225 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10222 10:53:08 <... getpid resumed> )   = 10222
+10225 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10222 10:53:08 getppid( <unfinished ...>
+10225 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10222 10:53:08 <... getppid resumed> )  = 10214
+10211 10:53:08 <... getpid resumed> )   = 10211
+10222 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10211 10:53:08 clone( <unfinished ...>
+10226 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10229
+10211 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10228
+10226 10:53:08 clone( <unfinished ...>
+10211 10:53:08 clone( <unfinished ...>
+10227 10:53:08 getpid()                 = 10227
+10227 10:53:08 getppid( <unfinished ...>
+10211 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10230
+10227 10:53:08 <... getppid resumed> )  = 10222
+10211 10:53:08 clone( <unfinished ...>
+10226 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10231
+10227 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10226 10:53:08 clone( <unfinished ...>
+10211 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10232
+10211 10:53:08 getpid()                 = 10211
+10229 10:53:08 clone( <unfinished ...>
+10228 10:53:08 clone( <unfinished ...>
+10211 10:53:08 fstat(1,  <unfinished ...>
+10226 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10233
+10211 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10226 10:53:08 getpid()                 = 10226
+10228 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10234
+10211 10:53:08 brk(NULL <unfinished ...>
+10226 10:53:08 fstat(1,  <unfinished ...>
+10228 10:53:08 clone( <unfinished ...>
+10226 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10211 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10211 10:53:08 brk(0x55f03fbb8000)      = 0x55f03fbb8000
+10234 10:53:08 clone( <unfinished ...>
+10211 10:53:08 getppid()                = 10210
+10211 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10228 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10235
+10226 10:53:08 brk(NULL <unfinished ...>
+10228 10:53:08 getpid( <unfinished ...>
+10226 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10228 10:53:08 <... getpid resumed> )   = 10228
+10226 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10228 10:53:08 getppid( <unfinished ...>
+10226 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10228 10:53:08 <... getppid resumed> )  = 10211
+10226 10:53:08 getppid( <unfinished ...>
+10228 10:53:08 fstat(1,  <unfinished ...>
+10226 10:53:08 <... getppid resumed> )  = 10211
+10228 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10226 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10228 10:53:08 brk(NULL <unfinished ...>
+10234 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10236
+10228 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10234 10:53:08 getpid( <unfinished ...>
+10228 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10234 10:53:08 <... getpid resumed> )   = 10234
+10228 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10234 10:53:08 getppid( <unfinished ...>
+10228 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10234 10:53:08 <... getppid resumed> )  = 10228
+10234 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10230 10:53:08 clone( <unfinished ...>
+10236 10:53:08 getpid( <unfinished ...>
+10231 10:53:08 clone( <unfinished ...>
+10236 10:53:08 <... getpid resumed> )   = 10236
+10236 10:53:08 getppid( <unfinished ...>
+10232 10:53:08 getpid( <unfinished ...>
+10236 10:53:08 <... getppid resumed> )  = 10234
+10236 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10237 10:53:08 getpid( <unfinished ...>
+10233 10:53:08 getpid( <unfinished ...>
+10237 10:53:08 <... getpid resumed> )   = 10237
+10233 10:53:08 <... getpid resumed> )   = 10233
+10237 10:53:08 getppid( <unfinished ...>
+10233 10:53:08 getppid( <unfinished ...>
+10237 10:53:08 <... getppid resumed> )  = 10230
+10233 10:53:08 <... getppid resumed> )  = 10226
+10237 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10233 10:53:08 fstat(1,  <unfinished ...>
+10232 10:53:08 <... getpid resumed> )   = 10232
+10233 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10232 10:53:08 getppid( <unfinished ...>
+10231 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10238
+10230 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10237
+10233 10:53:08 brk(NULL <unfinished ...>
+10232 10:53:08 <... getppid resumed> )  = 10211
+10233 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10232 10:53:08 fstat(1,  <unfinished ...>
+10233 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10232 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10233 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10231 10:53:08 getpid( <unfinished ...>
+10230 10:53:08 getpid( <unfinished ...>
+10212 10:53:08 <... getpid resumed> )   = 10212
+10233 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10232 10:53:08 brk(NULL <unfinished ...>
+10231 10:53:08 <... getpid resumed> )   = 10231
+10232 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10231 10:53:08 getppid( <unfinished ...>
+10232 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10231 10:53:08 <... getppid resumed> )  = 10226
+10232 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10231 10:53:08 fstat(1,  <unfinished ...>
+10232 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10231 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10230 10:53:08 <... getpid resumed> )   = 10230
+10238 10:53:08 getpid( <unfinished ...>
+10231 10:53:08 brk(NULL <unfinished ...>
+10230 10:53:08 getppid( <unfinished ...>
+10231 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10230 10:53:08 <... getppid resumed> )  = 10211
+10231 10:53:08 brk(0x55f03fbb8000 <unfinished ...>
+10230 10:53:08 fstat(1,  <unfinished ...>
+10231 10:53:08 <... brk resumed> )      = 0x55f03fbb8000
+10230 10:53:08 <... fstat resumed> {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10231 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10238 10:53:08 <... getpid resumed> )   = 10238
+10238 10:53:08 getppid( <unfinished ...>
+10230 10:53:08 brk(NULL <unfinished ...>
+10238 10:53:08 <... getppid resumed> )  = 10231
+10230 10:53:08 <... brk resumed> )      = 0x55f03fb97000
+10238 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10230 10:53:08 brk(0x55f03fbb8000)      = 0x55f03fbb8000
+10230 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10212 10:53:08 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10212 10:53:08 brk(NULL)                = 0x55f03fb97000
+10212 10:53:08 brk(0x55f03fbb8000)      = 0x55f03fbb8000
+10212 10:53:08 getppid()                = 10210
+10212 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10229 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10239
+10239 10:53:08 clone( <unfinished ...>
+10235 10:53:08 getpid( <unfinished ...>
+10229 10:53:08 clone( <unfinished ...>
+10235 10:53:08 <... getpid resumed> )   = 10235
+10239 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10240
+10235 10:53:08 getppid( <unfinished ...>
+10239 10:53:08 getpid( <unfinished ...>
+10241 10:53:08 getpid( <unfinished ...>
+10239 10:53:08 <... getpid resumed> )   = 10239
+10241 10:53:08 <... getpid resumed> )   = 10241
+10239 10:53:08 getppid( <unfinished ...>
+10241 10:53:08 getppid( <unfinished ...>
+10239 10:53:08 <... getppid resumed> )  = 10229
+10241 10:53:08 <... getppid resumed> )  = 10229
+10239 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10241 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10235 10:53:08 <... getppid resumed> )  = 10228
+10235 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10229 10:53:08 <... clone resumed> child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fd7cadc8790) = 10241
+10240 10:53:08 getpid()                 = 10240
+10240 10:53:08 getppid( <unfinished ...>
+10229 10:53:08 getpid( <unfinished ...>
+10240 10:53:08 <... getppid resumed> )  = 10239
+10240 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10229 10:53:08 <... getpid resumed> )   = 10229
+10229 10:53:08 getppid()                = 10226
+10229 10:53:08 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 0), ...}) = 0
+10229 10:53:08 brk(NULL)                = 0x55f03fb97000
+10229 10:53:08 brk(0x55f03fbb8000)      = 0x55f03fbb8000
+10229 10:53:08 nanosleep({tv_sec=1, tv_nsec=0},  <unfinished ...>
+10210 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10221 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10220 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10210 10:53:09 write(1, "X", 1)         = 1
+10221 10:53:09 exit_group(0 <unfinished ...>
+10218 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10210 10:53:09 exit_group(0 <unfinished ...>
+10221 10:53:09 <... exit_group resumed>) = ?
+10210 10:53:09 <... exit_group resumed>) = ?
+10220 10:53:09 exit_group(0 <unfinished ...>
+10219 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10218 10:53:09 write(1, "Y", 1 <unfinished ...>
+10216 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10210 10:53:09 +++ exited with 0 +++
+10221 10:53:09 +++ exited with 0 +++
+10219 10:53:09 write(1, "Y", 1 <unfinished ...>
+10218 10:53:09 <... write resumed> )    = 1
+10220 10:53:09 <... exit_group resumed>) = ?
+10219 10:53:09 <... write resumed> )    = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+10218 10:53:09 exit_group(0 <unfinished ...>
+10216 10:53:09 exit_group(0 <unfinished ...>
+10219 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10221, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10223 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10220 10:53:09 +++ exited with 0 +++
+10219 10:53:09 write(1, "Y", 1 <unfinished ...>
+10218 10:53:09 <... exit_group resumed>) = ?
+10223 10:53:09 exit_group(0 <unfinished ...>
+10219 10:53:09 <... write resumed> )    = 1
+10223 10:53:09 <... exit_group resumed>) = ?
+10219 10:53:09 exit_group(0 <unfinished ...>
+10218 10:53:09 +++ exited with 0 +++
+10219 10:53:09 <... exit_group resumed>) = ?
+10223 10:53:09 +++ exited with 0 +++
+10216 10:53:09 <... exit_group resumed>) = ?
+10215 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10219 10:53:09 +++ exited with 0 +++
+10216 10:53:09 +++ exited with 0 +++
+10213 10:53:09 <... nanosleep resumed> {tv_sec=0, tv_nsec=1263195}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10224 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10215 10:53:09 write(1, "Y", 1 <unfinished ...>
+10213 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10223, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10215 10:53:09 <... write resumed> )    = 1
+10224 10:53:09 exit_group(0 <unfinished ...>
+10215 10:53:09 exit_group(0 <unfinished ...>
+10224 10:53:09 <... exit_group resumed>) = ?
+10215 10:53:09 <... exit_group resumed>) = ?
+10213 10:53:09 restart_syscall(<... resuming interrupted nanosleep ...> <unfinished ...>
+10212 10:53:09 <... nanosleep resumed> {tv_sec=0, tv_nsec=11484038}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10224 10:53:09 +++ exited with 0 +++
+10215 10:53:09 +++ exited with 0 +++
+10214 10:53:09 <... nanosleep resumed> {tv_sec=0, tv_nsec=634724}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10212 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10219, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10214 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10224, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10212 10:53:09 restart_syscall(<... resuming interrupted nanosleep ...> <unfinished ...>
+10214 10:53:09 restart_syscall(<... resuming interrupted nanosleep ...> <unfinished ...>
+10213 10:53:09 <... restart_syscall resumed> ) = 0
+10213 10:53:09 write(1, "Y", 1 <unfinished ...>
+10217 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10213 10:53:09 <... write resumed> )    = 1
+10217 10:53:09 exit_group(0 <unfinished ...>
+10214 10:53:09 <... restart_syscall resumed> ) = 0
+10213 10:53:09 exit_group(0 <unfinished ...>
+10217 10:53:09 <... exit_group resumed>) = ?
+10214 10:53:09 write(1, "Y", 1 <unfinished ...>
+10213 10:53:09 <... exit_group resumed>) = ?
+10214 10:53:09 <... write resumed> )    = 1
+10217 10:53:09 +++ exited with 0 +++
+10214 10:53:09 exit_group(0 <unfinished ...>
+10213 10:53:09 +++ exited with 0 +++
+10214 10:53:09 <... exit_group resumed>) = ?
+10214 10:53:09 +++ exited with 0 +++
+10212 10:53:09 <... restart_syscall resumed> ) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10212 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10214, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10212 10:53:09 restart_syscall(<... resuming interrupted restart_syscall ...> <unfinished ...>
+10225 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10222 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10225 10:53:09 write(1, "Y", 1)         = 1
+10225 10:53:09 exit_group(0)            = ?
+10222 10:53:09 exit_group(0)            = ?
+10225 10:53:09 +++ exited with 0 +++
+10212 10:53:09 <... restart_syscall resumed> ) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10222 10:53:09 +++ exited with 0 +++
+10212 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10225, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10212 10:53:09 restart_syscall(<... resuming interrupted restart_syscall ...> <unfinished ...>
+10227 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10227 10:53:09 exit_group(0)            = ?
+10227 10:53:09 +++ exited with 0 +++
+10211 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10211 10:53:09 write(1, "X", 1)         = 1
+10211 10:53:09 exit_group(0 <unfinished ...>
+10226 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10211 10:53:09 <... exit_group resumed>) = ?
+10226 10:53:09 write(1, "X", 1)         = 1
+10228 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10226 10:53:09 exit_group(0 <unfinished ...>
+10234 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10211 10:53:09 +++ exited with 0 +++
+10234 10:53:09 exit_group(0 <unfinished ...>
+10228 10:53:09 write(1, "Y", 1 <unfinished ...>
+10226 10:53:09 <... exit_group resumed>) = ?
+10234 10:53:09 <... exit_group resumed>) = ?
+10228 10:53:09 <... write resumed> )    = 1
+10226 10:53:09 +++ exited with 0 +++
+10234 10:53:09 +++ exited with 0 +++
+10228 10:53:09 exit_group(0)            = ?
+10236 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10228 10:53:09 +++ exited with 0 +++
+10236 10:53:09 exit_group(0)            = ?
+10237 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10236 10:53:09 +++ exited with 0 +++
+10237 10:53:09 exit_group(0)            = ?
+10237 10:53:09 +++ exited with 0 +++
+10230 10:53:09 <... nanosleep resumed> {tv_sec=0, tv_nsec=1509178}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10230 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10237, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10230 10:53:09 restart_syscall(<... resuming interrupted nanosleep ...> <unfinished ...>
+10233 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10233 10:53:09 write(1, "Y", 1)         = 1
+10233 10:53:09 exit_group(0)            = ?
+10233 10:53:09 +++ exited with 0 +++
+10231 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10231 10:53:09 write(1, "Y", 1 <unfinished ...>
+10232 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10238 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10231 10:53:09 <... write resumed> )    = 1
+10232 10:53:09 write(1, "Y", 1 <unfinished ...>
+10238 10:53:09 exit_group(0 <unfinished ...>
+10232 10:53:09 <... write resumed> )    = 1
+10238 10:53:09 <... exit_group resumed>) = ?
+10232 10:53:09 exit_group(0 <unfinished ...>
+10230 10:53:09 <... restart_syscall resumed> ) = 0
+10231 10:53:09 exit_group(0 <unfinished ...>
+10238 10:53:09 +++ exited with 0 +++
+10232 10:53:09 <... exit_group resumed>) = ?
+10231 10:53:09 <... exit_group resumed>) = ?
+10230 10:53:09 write(1, "Y", 1 <unfinished ...>
+10231 10:53:09 +++ exited with 0 +++
+10230 10:53:09 <... write resumed> )    = 1
+10232 10:53:09 +++ exited with 0 +++
+10230 10:53:09 exit_group(0)            = ?
+10230 10:53:09 +++ exited with 0 +++
+10212 10:53:09 <... restart_syscall resumed> ) = 0
+10212 10:53:09 write(1, "X", 1)         = 1
+10212 10:53:09 exit_group(0)            = ?
+10212 10:53:09 +++ exited with 0 +++
+10241 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10239 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10235 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10241 10:53:09 exit_group(0 <unfinished ...>
+10240 10:53:09 <... nanosleep resumed> 0x7ffe6634eca0) = 0
+10241 10:53:09 <... exit_group resumed>) = ?
+10239 10:53:09 exit_group(0 <unfinished ...>
+10235 10:53:09 exit_group(0 <unfinished ...>
+10239 10:53:09 <... exit_group resumed>) = ?
+10240 10:53:09 exit_group(0 <unfinished ...>
+10235 10:53:09 <... exit_group resumed>) = ?
+10240 10:53:09 <... exit_group resumed>) = ?
+10239 10:53:09 +++ exited with 0 +++
+10241 10:53:09 +++ exited with 0 +++
+10235 10:53:09 +++ exited with 0 +++
+10229 10:53:09 <... nanosleep resumed> {tv_sec=0, tv_nsec=354284}) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+10229 10:53:09 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=10239, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+10240 10:53:09 +++ exited with 0 +++
+10229 10:53:09 restart_syscall(<... resuming interrupted nanosleep ...>) = 0
+10229 10:53:09 write(1, "Y", 1)         = 1
+10229 10:53:09 exit_group(0)            = ?
+10229 10:53:09 +++ exited with 0 +++

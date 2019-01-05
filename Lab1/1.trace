@@ -1,0 +1,8 @@
+12496 11:37:17.645137 execve("./1", ["./1"], 0x7ffff16be1f0 /* 76 vars */) = 0
+12496 11:37:17.647565 arch_prctl(ARCH_SET_FS, 0x7f052b2bd4c0) = 0
+12496 11:37:17.648644 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f052b2bd790) = 12497
+12497 11:37:17.649318 exit_group(0)     = ?
+12497 11:37:17.649555 +++ exited with 0 +++
+12496 11:37:17.649616 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=12497, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+12496 11:37:18.649853 exit_group(0)     = ?
+12496 11:37:18.650331 +++ exited with 0 +++
