@@ -1,0 +1,3 @@
+4152  execve("./", ["./"], [/* 70 vars */]) = -1 EACCES (Permission denied)
+4152  exit_group(1)                     = ?
+4152  +++ exited with 1 +++

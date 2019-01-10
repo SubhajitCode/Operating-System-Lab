@@ -1,0 +1,10 @@
+4909  16:28:06.541861 execve("./gork", ["./gork"], [/* 70 vars */]) = 0
+4909  16:28:06.542831 arch_prctl(ARCH_SET_FS, 0x7f6533b6d740) = 0
+4909  16:28:06.543125 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6533b6da10) = 4910
+4910  16:28:06.543279 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6533b6da10) = 4911
+4909  16:28:08.543795 exit_group(0)     = ?
+4911  16:28:08.543873 exit_group(0)     = ?
+4910  16:28:08.543893 exit_group(0)     = ?
+4911  16:28:08.543981 +++ exited with 0 +++
+4910  16:28:08.544026 +++ exited with 0 +++
+4909  16:28:08.544052 +++ exited with 0 +++

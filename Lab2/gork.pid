@@ -1,0 +1,10 @@
+4900  execve("./gork", ["./gork"], [/* 70 vars */]) = 0
+4900  arch_prctl(ARCH_SET_FS, 0x7feed79ab740) = 0
+4900  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7feed79aba10) = 4901
+4901  clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7feed79aba10) = 4902
+4902  exit_group(0)                     = ?
+4901  exit_group(0)                     = ?
+4900  exit_group(0)                     = ?
+4902  +++ exited with 0 +++
+4901  +++ exited with 0 +++
+4900  +++ exited with 0 +++

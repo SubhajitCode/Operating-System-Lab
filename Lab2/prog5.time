@@ -1,0 +1,23 @@
+4284  15:43:35.827604 execve("./prog5", ["./prog5"], [/* 70 vars */]) = 0
+4284  15:43:35.828190 arch_prctl(ARCH_SET_FS, 0x7f4ca7e41740) = 0
+4284  15:43:35.828380 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f4ca7e41a10) = 4285
+4285  15:43:35.828446 clone( <unfinished ...>
+4284  15:43:35.828459 clone( <unfinished ...>
+4285  15:43:35.828511 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f4ca7e41a10) = 4286
+4284  15:43:35.828536 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f4ca7e41a10) = 4287
+4284  15:43:35.828607 clone( <unfinished ...>
+4286  15:43:35.828680 exit_group(0)     = ?
+4284  15:43:35.828712 <... clone resumed> child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f4ca7e41a10) = 4288
+4286  15:43:35.828741 +++ exited with 0 +++
+4285  15:43:35.828781 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4286, si_status=0, si_utime=0, si_stime=0} ---
+4287  15:43:35.828803 exit_group(0)     = ?
+4285  15:43:35.828824 exit_group(0)     = ?
+4287  15:43:35.828848 +++ exited with 0 +++
+4288  15:43:35.828895 exit_group(0)     = ?
+4285  15:43:35.828910 +++ exited with 0 +++
+4284  15:43:35.828920 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4287, si_status=0, si_utime=0, si_stime=0} ---
+4288  15:43:35.828937 +++ exited with 0 +++
+4284  15:43:35.828947 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4285, si_status=0, si_utime=0, si_stime=0} ---
+4284  15:43:35.828963 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4288, si_status=0, si_utime=0, si_stime=0} ---
+4284  15:43:35.829029 exit_group(0)     = ?
+4284  15:43:35.829086 +++ exited with 0 +++
