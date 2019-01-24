@@ -4,7 +4,7 @@ class xyz implements Runnable
 	public void run()
 	{
 		int i;
-		for(i=0;i<5;i++)
+		for(i=0;i<10;i++)
 		{
 			System.out.print(i);
 			try
@@ -21,7 +21,7 @@ class xyz implements Runnable
 }
 
 
-class prog4{
+class prog4b{
 
 public static void main(String args[]) throws Exception
 {
@@ -33,14 +33,14 @@ public static void main(String args[]) throws Exception
 	a.start();
 	//Thread.sleep(1500);
 	//b.start();
-	Thread.sleep(1100);
+	Thread.sleep(100);
 
-	for(int i=0;i<5;i++)
+	for(int i=0;i<8;i++)
 	{
 		//System.out.print(i);
 		try
 		{
-			Thread.sleep(700);
+			Thread.sleep(1500);
 			System.out.print("x");
 		}
 		catch(Exception ex)
