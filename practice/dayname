@@ -1,0 +1,13 @@
+
+case  $1 in
+	1)day=MonDay;;
+	2)day=TuesDay;;
+	3)day=WednesDay;;
+	4)day=Thursday;;
+	5)day=Friday;;
+	6)day=Saturday;;
+	7)day=SUNDAY;;
+esac
+
+echo $day
+

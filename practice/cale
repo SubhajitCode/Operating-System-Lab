@@ -1,0 +1,20 @@
+if [ -z "$2" ];then
+	year=$(date +'%Y')
+else
+	year=$2;
+fi
+case $1 in
+Jan) cal 1 $year;;
+Feb) cal 2 $year;; 
+Mar) cal 3 $year;;
+Apr) cal 4 $year;;
+May) cal 5 $year;;
+Jun) cal 6 $year;;
+Jul) cal 7 $year;;
+Aug) cal 8 $year;;
+Sep) cal 9 $year;;
+Oct) cal 10 $year;;
+Dec) cal 12 $year;;
+Nov) cal 11 $year;;
+esac
+

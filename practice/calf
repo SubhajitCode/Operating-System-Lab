@@ -1,0 +1,3 @@
+month=$(( $1+1 ));
+month=$(( $month%12 ))
+cal $month $2
