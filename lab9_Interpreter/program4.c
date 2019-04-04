@@ -31,8 +31,7 @@ bool condition(char x[],int a[])
 
 void evaluate(char x[],int a[],bool flag)
 {
-	if(flag)
-		scanf("%s",x);
+
 
 		if((x[1]=='=')&&(x[3]=='+')&&isSymbol(x[4]))//for a=a+b
 			a[x[0]]=a[x[2]]+a[x[4]];
@@ -91,10 +90,20 @@ void evaluate(char x[],int a[],bool flag)
 }
 main()
 {
-char x[20];int a[200];
+char x[20];int a[50][200];
+printf("Please Please Give nUmber of Process\n");
+int i;
+int d;scanf("%d",&d);
 	do
 	{
-		evaluate(x,a,true);
+		scanf("%s",x);
+		
+		for( i = 1; i <=d; i++)
+		{
+			a[i][122]=i;
+			evaluate(x,a[i],true);			
+		}
+		
 	}
 	while(1);
 	
