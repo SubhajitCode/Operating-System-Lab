@@ -1,0 +1,10 @@
+m=9
+a=4
+b=1
+c=4
+a=a+b
+print(a)
+if(a<m)
+w=c
+end
+
